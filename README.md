@@ -117,14 +117,14 @@ def irregular(verb, x, y, my_dict):
 def take_input(verb, endings):
 
     dict_of_irregs = irregulars[endings["name"]]
-    bob = conjugate(verb, endings)
-    bob = to_dataframe(bob)
-    bob = bob.rename(index=str, columns={0: verb})
+    conjugated = conjugate(verb, endings)
+    conjugated = to_dataframe(conjugated)
+    conjugated = conjugated.rename(index=str, columns={0: verb})
     if (verb in dict_of_irregs):
         find_verb = pd.DataFrame(pd.DataFrame(dict_of_irregs)[verb])
         find_verb = find_verb.dropna()
-        bob = irregular(verb, bob, find_verb, dict_of_irregs)
-    return(bob)
+        conjugated = irregular(verb, conjugated, find_verb, dict_of_irregs)
+    return(conjugated)
 
 ```
 
