@@ -31,6 +31,7 @@ irregulars = {"present_indicative": present_indicative_irregulars,
 ```
 
 
+A verb is conjugated by removing its last two letters and replacing them with the appropriate ending from.
 ```python
 def conjugate(verb, endings):
     stem = ''.join([*verb][0:len(verb)-2])
@@ -42,7 +43,7 @@ def conjugate(verb, endings):
     return(output)
 ```
 
-
+A conjugated verb is passed to a function that converts it into a pandas dataframe along with an index indicating the person for each verb
 ```python
 def to_dataframe(conjugated):
 
@@ -52,6 +53,7 @@ def to_dataframe(conjugated):
     return(conjugated)
 ```
 
+Next, a function is defined to take an irregular verb, search the dictionary for that verb, and replace the regular forms. This function is designed so that only forms that need to be replaced are replaced. This prevents the redundancy of needing to also input regular conjugations for each irregular verb.
 
 ```python
 def irregular(verb, x, y, my_dict):
@@ -60,11 +62,7 @@ def irregular(verb, x, y, my_dict):
     return(x)
 ```
 
-
-```python
-#keys = list(irregulars.keys())
-```
-
+The following function combines the previous ones together, accepting a verb along with the set of conjugations
 
 ```python
 def take_input(verb, endings):
@@ -81,12 +79,11 @@ def take_input(verb, endings):
 
 ```
 
+A couple of examples of irregular verbs that have some regular and some irregular endings.
 
 ```python
 take_input("ser", preterit_perfect)
 ```
-
-
 
 
 <div>
