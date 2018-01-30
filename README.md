@@ -32,53 +32,6 @@ irregulars = {"present_indicative": present_indicative_irregulars,
 
 
 ```python
-irregulars
-```
-
-
-
-
-    {'present_indicative': {'dar': {'ele': 'dá',
-       'eles': 'dão',
-       'eu': 'dou',
-       'tu': 'dás'},
-      'estar': {'ele': 'está', 'eles': 'estão', 'eu': 'estou', 'tu': 'estás'},
-      'querer': {'ele': 'quer'},
-      'ser': {'ele': 'é',
-       'eles': 'são',
-       'eu': 'sou',
-       'nós': 'somos',
-       'tu': 'és',
-       'vós': 'sois'},
-      'subir': {'ele': 'sobe', 'eles': 'sobem', 'tu': 'sobes'}},
-     'preterit_perfect': {'dar': {'ele': 'deu',
-       'eles': 'deram',
-       'nós': 'demos',
-       'tu': 'deste',
-       'vós': 'destes'},
-      'estar': {'ele': 'esteve',
-       'eles': 'estiveram',
-       'eu': 'estive',
-       'nós': 'estivemos',
-       'tu': 'estiveste',
-       'vós': 'estivestes'},
-      'querer': {'ele': 'quis',
-       'eles': 'quiseram',
-       'eu': 'quis',
-       'nós': 'quisemos',
-       'tu': 'quiseste',
-       'vós': 'quisestes'},
-      'ser': {'ele': 'foi',
-       'eles': 'foram',
-       'eu': 'fui',
-       'nós': 'fomos',
-       'tu': 'foste',
-       'vós': 'fostes'}}}
-
-
-
-
-```python
 def conjugate(verb, endings):
     stem = ''.join([*verb][0:len(verb)-2])
     kind = ''.join([*verb][len(verb)-2:len(verb)])
