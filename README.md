@@ -114,7 +114,7 @@ def irregular(verb, x, y, my_dict):
 
 
 ```python
-def get_it_done(verb, endings):
+def take_input(verb, endings):
 
     dict_of_irregs = irregulars[endings["name"]]
     bob = conjugate(verb, endings)
@@ -130,7 +130,7 @@ def get_it_done(verb, endings):
 
 
 ```python
-get_it_done("ser", preterit_perfect)
+take_input("ser", preterit_perfect)
 ```
 
 
@@ -178,7 +178,7 @@ get_it_done("ser", preterit_perfect)
 
 
 ```python
-get_it_done("estar", present_indicative)
+take_input("estar", present_indicative)
 ```
 
 
