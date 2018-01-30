@@ -1,34 +1,5 @@
 
-
-```python
-import pandas as pd
-import numpy as np
-```
-
-
-```python
-#figure out how to load a file as a dictionary
-present_indicative = {"name": "present_indicative",
-                      "ar": ["o", "amos", "as", "ais", "a", "am"],
-                      "er": ["o", "emos", "es", "eis", "e", "em"],
-                      "ir": ["o", "imos", "es", "is", "e", "em"]}
-preterit_perfect = {"name": "preterit_perfect",
-                    "ar": ["ei", "ámos", "aste", "astes", "ou", "aram"],
-                    "er": ["i", "emos", "es", "eis", "e", "em"],
-                    "ir": ["i", "imos", "iste", "istes", "iu", "iram"]}
-present_indicative_irregulars = {"estar": {"eu": "estou", "tu": "estás", "ele": "está", "eles": "estão"},
-                                 "dar": {"eu": "dou", "tu": "dás", "ele": "dá", "eles": "dão"},
-                                 "querer": {"ele": "quer"},
-                                 "subir": {"tu": "sobes", "ele": "sobe", "eles": "sobem"},
-                                 "ser": {"eu": "sou", "tu": "és", "ele": "é", "nós": "somos", "vós": "sois", "eles": "são"} }
-preterit_perfect_irregulars = {"estar": {"eu": "estive", "tu": "estiveste", "ele": "esteve", "nós": "estivemos", "vós": "estivestes", "eles": "estiveram"},
-                               "dar": {"tu": "deste", "ele": "deu", "nós": "demos", "vós": "destes", "eles": "deram"},
-                               "querer": {"eu": "quis", "tu": "quiseste", "ele": "quis", "nós": "quisemos", "vós": "quisestes", "eles": "quiseram"},
-                               "ser": {"eu": "fui", "tu": "foste", "ele": "foi", "nós": "fomos", "vós": "fostes", "eles":"foram"}}
-
-irregulars = {"present_indicative": present_indicative_irregulars,
-              "preterit_perfect": preterit_perfect_irregulars}
-```
+# Portuguese Tools
 
 
 A verb is conjugated by removing its last two letters and replacing them with the appropriate ending from.
