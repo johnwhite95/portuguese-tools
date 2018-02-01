@@ -2,7 +2,7 @@
 # Portuguese Tools
 
 
-A verb is conjugated by removing its last two letters and replacing them with the appropriate ending from.
+A verb is conjugated by removing its last two letters and replacing them with the appropriate ending form.
 ```python
 def conjugate(verb, endings):
     stem = ''.join([*verb][0:len(verb)-2])
